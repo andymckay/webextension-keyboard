@@ -3,7 +3,7 @@ class API extends ExtensionAPI {
     return {
       hello: {
         hello() {
-          return "Hello, world!"
+          return Promise.resolve("Hello, world!");
         },
       },
     };
